@@ -19,6 +19,8 @@ blink	KEYWORD2
 isElapsed	KEYWORD2
 triggerFunction	KEYWORD2
 getTimeElapsed	KEYWORD2
+update	KEYWORD2
+detach	KEYWORD2
 
 
 #######################################
