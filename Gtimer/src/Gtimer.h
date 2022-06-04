@@ -5,11 +5,18 @@
 
 class GTimer {
 public:
+	GTimer();
+	GTimer(int interval);
+	GTimer(unsigned long interval);
+	GTimer(int interval, void(*function)());
+	GTimer(unsigned long interval, void(*function)());
 	void setInterval(unsigned long interval);
 	void attach(void(*function)());
+	void detach();
 	void reset();
 	bool isElapsed(bool resetIfElapsed = true);
 	bool triggerFunction(bool resetIfTriggered = true);
+	bool update(bool resetIfTriggered = true);
 	unsigned long getTimeElapsed();
 
 
